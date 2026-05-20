@@ -35,17 +35,49 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Etec Adolpho Berezin - PAM1'),
-          backgroundColor: Colors.redAccent,
+        backgroundColor: Theme.of(context).colorScheme.inversePrimary,
+        title: const Text('AppBar'),
       ),
-      body: const Center(
+      body: Center(
         child: Text(
-          'Desenvolvimento Mobile com Flutter',
+          'Body',
         style: TextStyle (
           fontSize: 12,
           color: Colors.blueGrey,
           ),
         ),
+      ),
+      drawer: Drawer(
+        child: Text(  
+          'Drawer',
+        ),
+      ),
+      endDrawer: Drawer(
+        child: Text(
+          'endDrawer'
+          ),
+      ),
+      bottomNavigationBar: BottomNavigationBar(
+        items: const <BottomNavigationBarItem>[
+          BottomNavigationBarItem(
+            icon: Icon(Icons.home),
+            label: 'ButtonNavigationBar1',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.home),
+            label: 'ButtonNavigationBar2',
+          ),
+        ],
+      ),
+      floatingActionButtonLocation: FloatingActionButtonLocation.endFloat,
+      floatingActionButton: FloatingActionButton(
+        child: Icon(Icons.add),
+        backgroundColor: Colors.green,
+        foregroundColor: Colors.white,
+        onPressed: () {
+          setState(() {
+          });
+        },
       ),
     );
   }
