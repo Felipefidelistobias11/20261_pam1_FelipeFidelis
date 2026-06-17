@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Perfil',
       theme: ThemeData(
         colorScheme: .fromSeed(seedColor: Colors.deepPurple),
       ),
@@ -30,6 +30,12 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
+   Widget _buildContactItem(IconData icon, String text) {
+    return ListTile(
+      leading: Icon(icon),
+      title: Text(text),
+    );
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -44,7 +50,7 @@ class _MyHomePageState extends State<MyHomePage> {
               backgroundColor: Colors.redAccent,
               child: CircleAvatar(
                 radius: 56,
-                backgroundImage: NetworkImage('https://www.reddit.com/media?url=https%3A%2F%2Fpreview.redd.it%2Fi-cant-find-a-bootleg-ralsei-plush-thta-is-on-stock-any-v0-22k3shs3eudf1.jpg%3Fwidth%3D450%26format%3Dpjpg%26auto%3Dwebp%26s%3Dd9914646d4fa203084dd9211e702845f2913d0a5'),
+                backgroundImage: NetworkImage('https://http2.mlstatic.com/D_Q_NP_725206-MLB104209263352_012026-O.webp'),
               ),
             ),
 
