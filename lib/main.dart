@@ -73,6 +73,36 @@ class _MyHomePageState extends State<MyHomePage> {
             _buildContactItem(Icons.web, '@felipefidelis'),
             const Divider(),
             const SizedBox(height: 20),
+
+            const Align(
+              alignment: Alignment.centerLeft,
+              child: Text(
+                'Resumo Profissional',
+                style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: Colors.redAccent),
+              ),
+            ),
+            const SizedBox(height: 10),
+            const Text(
+              'Artista nivel intermediario.',
+              textAlign: TextAlign.justify, 
+              style: TextStyle(fontSize: 16),
+            ),
+            const SizedBox(height: 25),
+            const Divider(),
+
+            const Align(
+              alignment: Alignment.centerLeft,
+              child: Text(
+                'Objetivo',
+                style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: Colors.redAccent),
+              ),
+            ),
+            const SizedBox(height: 10),
+            const Text(
+              'Conseguir algo na vida.',
+              textAlign: TextAlign.justify,
+              style: TextStyle(fontSize: 16, fontStyle: FontStyle.italic),
+            ),
           ],
         ),
       )
